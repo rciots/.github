@@ -31,7 +31,7 @@ Its repositories contain two folders:
 
 All services are built in quay.io's rciots organization https://quay.io/organization/rciots, except for edge-cam as it needs the ffmpeg package and is built on a RHEL machine with active subscription to enable the repository *"codeready-builder-for-rhel-9-x86_64-rpms"*
 
-![claw diagram](https://github.com/rciots/.github/raw/master/images/claw.rciots.png)
+![claw diagram](https://raw.githubusercontent.com/rciots/.github/main/profile/images/claw.rciots.png)
 
 ### dc-front
 
