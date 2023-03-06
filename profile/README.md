@@ -2,7 +2,9 @@
 
 ## Introduction
 
-In this organization https://www.github.com/rciots are the repositories used to deploy as a proof of concept, the first "Cloud Native" online arcade machine https://claw.rciots.com, which runs on Microshift (edge-* repos) and Openshift (dc-* repos)
+In this organization https://www.github.com/rciots are hosted the repositories used to deploy as a proof of concept, the first "Cloud Native" online arcade machine https://claw.rciots.com (not always available), which runs on Microshift (edge-* repos) and Openshift (dc-* repos).
+
+[![Youtube example claw.rciots.com](https://raw.githubusercontent.com/rciots/.github/main/profile/images/youtube.png)](https://www.youtube.com/watch?v=Yd9cCu0k9_g)
 
 ## Hardware
 
@@ -17,9 +19,20 @@ Components:
 - 3 x nema 17 stepper motors
 - 4 x end stop sensors with signal
 - A claw from a claw machine
-- Laser diode 5v (pointer)
 - 12v 10A 120W power supply (power for the motors, claw and Led illumination)
 - 5v relay (open / close the claw)
+
+## Software
+
+Hi there! I'm Mario Parra, Cloud Consultant, not developer, so I have started the project with the knowledge that I have in my hand, and in my case it's a bit of Javascript applied for full-stack running with NodeJS.
+
+All the services are created under the same structure, using differents libraries like:
+- Express: web application framework
+- Socket.io: websocket server for realtime stream, used at front, dc-socket-manager and edge-ws-connector
+- Socket.io-client: client library of Socket-io
+- Johnny-five: Control the robotics parts (Arduino) with Firmata from edge-controller service
+
+Also for cam streaming edge-cam is using ffmpeg package.
 
 ## Services
 
